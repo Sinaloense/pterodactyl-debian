@@ -10,6 +10,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y \
     ca-certificates \
     wget \
+    adduser \
     && rm -rf /var/lib/apt/lists/* \
     && adduser --disabled-password --home /home/container container \
     && chown -R container:container /home/container
