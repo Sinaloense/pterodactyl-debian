@@ -1,4 +1,6 @@
-FROM debian:bookworm-slim
+ARG DEBIAN_VERSION=trixie-slim
+
+FROM debian:$DEBIAN_VERSION
 
 LABEL maintainer="Manuel Martinez <sina@serverscstrike.com>"
 
